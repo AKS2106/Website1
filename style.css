@@ -1,0 +1,310 @@
+body{
+    background-image: linear-gradient(to top,#7F27FF,#9F70FD);
+    height: 100vh;    
+}
+.wrapper span{
+    position: fixed;
+    bottom: -50px;
+    height: 50px;
+    width: 50px;
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    background-color: #fff;
+    animation: animate 10s linear infinite;
+}
+.wrapper span:nth-child(1){
+    left: 0;
+    animation-delay: 0.6s;    
+}
+.wrapper span:nth-child(2){
+    left: 10%;
+    animation-delay: 3s;    
+}
+.wrapper span:nth-child(3){
+    left: 20%;
+    animation-delay: 2s;    
+}
+.wrapper span:nth-child(4){
+    left: 30%;
+    animation-delay: 5s;    
+}
+.wrapper span:nth-child(5){
+    left: 40%;
+    animation-delay: 1s;    
+}
+.wrapper span:nth-child(6){
+    left: 50%;
+    animation-delay: 7s;    
+}
+.wrapper span:nth-child(7){
+    left: 60%;
+    animation-delay: 6s;    
+}
+.wrapper span:nth-child(8){
+    left: 70%;
+    animation-delay: 8s;    
+}
+.wrapper span:nth-child(9){
+    left: 80%;
+    animation-delay: 6s;    
+}
+.wrapper span:nth-child(10){
+    left: 88%;
+    animation-delay: 4s;    
+}
+.wrapper span:nth-child(11){
+    left: 93%;
+    animation-delay: 2s;    
+}
+#noButton {
+    position: absolute;
+    margin-left: 0px;
+    transition: 0.5s;
+    margin-top: 300px;
+    margin-right: -300px;
+  }
+  
+  #yesButton {
+    position: absolute;
+    margin-right: 0px;
+    margin-top: 300px;
+    margin-left: -300px;
+  }
+.banner{
+    display: flex;
+    text-align: center;
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+    font-family: montserrat;
+    font-size: 80px;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+.popup {
+    display: none;
+    animation: fadeInOut 4s ease-in-out;
+  }
+.question {
+    display: none;
+    animation: fadeIn 4s ease-in-out;
+  }
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+  
+  .btn {
+    background-color: rgb(206, 50, 128);
+    color: white;
+    font-weight: 600;
+    padding: 20px 45px;
+    text-align: center;
+    display: inline-block;
+    font-size: 30px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border: none;
+    border-radius: 12px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 3px 3px black;
+  }
+  
+  .btn:hover {
+    background-color: #ffffff;
+    color: #017cff;
+  }
+
+  @keyframes fadeInOut {
+    0%, 100% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+@keyframes animate{
+    0%{
+        bottom: 0;
+        margin-left: 90px;
+        margin-right: 0;
+        opacity: 1;
+    }
+    20%{
+        bottom: 20%;
+        margin-left: 0;
+        margin-right: 90px;
+        opacity: 0.8;
+    }
+    40%{
+        bottom: 40%;
+        margin-left: 90px;
+        margin-right: 0;
+        opacity: 0.6;
+    }
+    60%{
+        bottom: 60%;
+        margin-left: 0;
+        margin-right: 90px;
+        opacity: 0.4;
+    }
+    80%{
+        bottom: 80%;
+        margin-left: 90px;
+        margin-right: 0;
+        opacity: 0.2;
+    }
+    100%{
+        bottom: 100%;
+        margin-left: 0;
+        margin-right: 90px;
+        opacity: 0;
+    }
+}
+section
+{
+    position: relative;
+    width: 100%;
+    background: radial-gradient(#b293f1,#9964e8,#7F27FF);
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header_text {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+   position: relative;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: white;
+    animation-name: header;
+    animation-duration: 4s;
+  }
+  @keyframes header{
+    0% {top: -400px;}
+    100% {top: 0px;}
+  }
+
+  .text {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 0px;
+  }
+  .gif_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+section .set{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
+section .set div {
+    position: absolute;
+    display: block;
+}
+section .set div:nth-child(1){
+    left: 20%;
+    animation: animate 15s linear infinite;
+    animation-deLay: -7s;
+}
+section .set div:nth-child(2){
+    left: 50%;
+    animation: animate 20s linear infinite;
+    animation-deLay: -5s;
+}
+section .set div:nth-child(3){
+    left: 70%;
+    animation: animate 20s linear infinite;
+    animation-deLay: 0s;
+}
+section .set div:nth-child(4){
+    left: 0%;
+    animation: animate 15s linear infinite;
+    animation-deLay: -5s;
+}
+section .set div:nth-child(5){
+    left: 85%;
+    animation: animate 18s linear infinite;
+    animation-deLay: -10s;
+}
+section .set div:nth-child(6){
+    left: 0%;
+    animation: animate 12s linear infinite;
+}
+section .set div:nth-child(7){
+    left: 15%;
+    animation: animate 14s linear infinite;
+}
+section .set div:nth-child(8){
+    left: 60%;
+    animation: animate 15s linear infinite;
+}
+@keyframes animate {
+    0%
+    {
+        opacity: 0; 
+        top: -10%;
+        transform: translateX(20px) rotate(0deg);
+    }
+    10%{
+        opacity: 1;
+    }
+    20%
+    {
+        transform: translateX(-20px) rotate(45deg);
+    }
+    40%
+    {
+        transform: translateX(-20px) rotate(90deg);
+    }
+    60%
+    {
+        transform: translateX(20px) rotate(180deg);
+    }
+    80%
+    {
+        transform: translateX(-20px) rotate(180deg);
+    }
+    100%
+    {
+        top: 110%;
+        transform: translateX(-20px) rotate(225deg);
+    }
+}
+.set2
+{
+    transform: scale(2) rotateY(180eg);
+    filter: blur(2px);
+}     
+.set3
+{
+    transform: scale(0.8) rotateY(180eg);
+    filter: blur(2px);
+}     
